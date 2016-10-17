@@ -16,6 +16,7 @@
         background-size: cover;
         border-style: solid;
         border-color: black;
+        transition: 0.5;
         
     }
     
@@ -27,7 +28,7 @@
         font-size: 35px
     }
     
-    .avatar {
+    #avatar {
         height: 275px;
         width: auto;
         position: absolute;
@@ -35,7 +36,7 @@
         top: 175px;
         border-style: solid;
         border-color: black;
-        rotate
+        transition: 1s;
         
     }
  
@@ -45,6 +46,7 @@
         margin: 150px 0 0 0;
         font-style: italic;
         font-size: 35px;
+        transition: 1s;
     }
  
     #Porfolio {
@@ -151,6 +153,7 @@
         background-size: cover;
         border-style: solid;
         border-color: black;
+        transition: 1s;
     }
     
     .bannertext2 {
@@ -159,6 +162,7 @@
         top: 15%;
         color: rgba(255,255,255,0.90);
         font-size: 80px;
+        
     }
     
 </style>
@@ -166,7 +170,7 @@
 <body>
     <div id='banner'>
         <h3 class='bannertext'>Providing Mediocrity</h3>
-        <img class='avatar' src='Avatar.jpg'>
+        <img id='avatar' src='Avatar.jpg'>
     </div>
 
     <div id='Profile'>
@@ -230,6 +234,32 @@
      <div id='banner2'>
         <h3 class='bannertext2'>Innovating Nothing</h3>
     </div>
+    
+    <script>
+        var ProfPic = document.getElementById('avatar');
+        var BioPic = document.getElementById('BioPic');
+        var Banner = document.getElementById('banner');
+        var Banner2 = document.getElementById('banner2');
+        
+        ProfPic.onclick = function() {
+            ProfPic.style.height = "300px";
+            
+        }
+        
+        BioPic.onclick = function() {
+            BioPic.style.backgroundColor = "blue";
+        }
+        
+        Banner.onclick = function() {
+            Banner.style.height = "400px";
+            
+        }
+        
+        Banner2.onclick = function() {
+            Banner2.style.height = "5000px";
+        }
+  
+    </script>
     
 </body>
 
