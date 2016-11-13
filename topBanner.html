@@ -1,0 +1,162 @@
+<style>
+
+#banner {
+        width: 100vw;
+        height: 300px;
+        background-image: url(banner.JPG);
+        background-position: center center;
+        background-size: cover;
+        border-style: solid;
+        border-color: black;
+        transition: 0.5;
+        
+    }
+    
+    .bannertext {
+        position: relative;
+        left:45vw;
+        top: 15%;
+        color: rgba(255,255,255,0.75);
+        font-size: 35px
+    }
+    
+    #avatar {
+        height: 275px;
+        width: auto;
+        position: absolute;
+        left: 45vw;
+        top: 175px;
+        border-style: solid;
+        border-color: black;
+        transition: 1s;
+        
+    }
+ 
+
+    #Profile {
+        text-align: center;
+        margin: 150px 0 0 0;
+        font-style: italic;
+        font-size: 35px;
+        transition: 1s;
+    }
+
+    
+    @media only screen and (min-width:600px) and (max-width:800px) {
+        
+        #banner {
+            width: 100vw;
+            height: 25vw;
+            background-image: url(banner.JPG);
+            background-position: center center;
+            background-size: cover;
+            border-style: solid;
+            border-color: black;
+            transition: 0.5;
+
+        }
+    
+        .bannertext {
+            position: relative;
+            left:15vw;
+            top: 5px;
+            color: rgba(255,255,255,0.75);
+            font-size: 15px;
+        }
+
+        #avatar {
+            height: 75px;
+            width: auto;
+            position: absolute;
+            left: 50%;
+            top: 10%;
+            border-style: solid;
+            border-color: red;
+            transition: 1s;
+
+        }
+
+
+        #Profile {
+            text-align: center;
+            margin: 20% 0 0 0;
+            font-style: italic;
+            font-size: 15px;
+            transition: 1s;
+        }   
+        
+    @media only screen and (max-width: 600px) {
+        #banner {
+            width: 100vw;
+            height: 25vw;
+            background-image: url(banner.JPG);
+            background-position: center center;
+            background-size: cover;
+            border-style: solid;
+            border-color: black;
+            transition: 0.5;
+
+        }
+    
+        .bannertext {
+            position: relative;
+            left:15vw;
+            top: 5px;
+            color: rgba(255,255,255,0.75);
+            font-size: 15px;
+        }
+
+        #avatar {
+            height: 75px;
+            width: auto;
+            position: absolute;
+            left: 50%;
+            top: 10%;
+            border-style: solid;
+            border-color: black;
+            transition: 1s;
+
+        }
+
+
+        #Profile {
+            text-align: center;
+            margin: 20% 0 0 0;
+            font-style: italic;
+            font-size: 15px;
+            transition: 1s;
+        }
+
+</style>
+
+
+<body>
+   <div id='banner'>
+        <h3 class='bannertext'>Providing Mediocrity</h3>
+        <img id='avatar' src='Avatar.jpg'>
+    </div>
+
+    <div id='Profile'>
+        <h4>Alex Christensen</h4>
+    </div>
+    
+        <script>
+        var ProfPic = document.getElementById('avatar');
+        var Banner = document.getElementById('banner');
+        
+        ProfPic.onclick = function() {
+            ProfPic.style.height = "300px";
+            
+        }
+
+        
+        Banner.onclick = function() {
+            Banner.style.height = "400px";
+            
+        }
+
+  
+    </script>
+    
+    
+</body>
